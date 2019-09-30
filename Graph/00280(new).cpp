@@ -29,15 +29,15 @@ int main() {
 				adjList[--u].push_back(--v);
 			}
 		}
-	}
-	int numStarting;
-	cin >> numStarting;
-	for (int i=0; i<numStarting; i++) {
-		int start;
-		cin >> start;
-		dfs(--start);
-		for (int j=0; j<visited.size(); j++) {
-			cout << visited[j];
+		int numStarting;
+		cin >> numStarting;
+		for (int i=0; i<numStarting; i++) {
+			int start;
+			cin >> start;
+			dfs(--start);
+			for (int j=0; j<visited.size(); j++) {
+				cout << visited[j];
+			}
 		}
 	}
 	return 0;
